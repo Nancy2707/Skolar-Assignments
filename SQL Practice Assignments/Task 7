@@ -1,0 +1,4 @@
+-- Select students whose age is higher than the average age of all students
+SELECT *
+FROM students
+WHERE age > (SELECT AVG(age) FROM students);
