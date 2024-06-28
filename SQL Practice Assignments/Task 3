@@ -1,0 +1,17 @@
+--Create a table named `departments` with columns `dept_id` and `dept_name`. Insert 3 records. Perform an inner join between `students` and `departments` to list all students with their department names.
+-- Create departments
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50)
+);
+
+-- Insert records
+INSERT INTO departments (dept_id, dept_name) VALUES
+(1, 'Computer Science'),
+(2, 'Mathematics'),
+(3, 'Physics');
+
+-- Inner Join
+SELECT students.student_id, students.first_name, students.last_name, departments.dept_name, students.age
+FROM students
+INNER JOIN departments ON students.department = departments.dept_name;
