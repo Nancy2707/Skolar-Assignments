@@ -1,0 +1,4 @@
+-- Update the age of students in the 'Mechanical' department
+UPDATE students
+SET age = age + 1
+WHERE department = 'Mechanical';
