@@ -1,0 +1,3 @@
+-- Select all students from the `students` table who are in the 'Computer Science' department.
+SELECT * FROM students
+WHERE department = 'Computer Science';
