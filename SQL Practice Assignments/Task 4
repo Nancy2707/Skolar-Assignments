@@ -1,0 +1,4 @@
+--List all departments and their students using a left join between `departments` and `students`. Include departments with no students.
+SELECT departments.dept_id, departments.dept_name, students.student_id, students.first_name, students.last_name, students.age
+FROM departments
+LEFT JOIN students ON departments.dept_name = students.department;
