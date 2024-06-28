@@ -1,0 +1,16 @@
+-- Task: Create a table named `students` with columns `student_id`, `first_name`, `last_name`, `department`, and `age`. Insert 5 records into this table.
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    age INT
+);
+
+-- Insert records into the table
+INSERT INTO students (student_id, first_name, last_name, department, age) VALUES
+(1, 'Nancy', 'Sharma', 'Computer Science', 20),
+(2, 'Sachin', 'Garg', 'Mathematics', 22),
+(3, 'Nikhil', 'Gupta', 'Physics', 21),
+(4, 'Harsh', 'Rajput', 'Chemistry', 23),
+(5, 'Keshav', 'Sharma', 'Biology', 19);
