@@ -1,0 +1,5 @@
+-- Create the view senior_students
+CREATE VIEW senior_students AS
+SELECT *
+FROM students
+WHERE age > 21;
