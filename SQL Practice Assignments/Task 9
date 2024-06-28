@@ -1,0 +1,3 @@
+-- Delete all students who are younger than 18
+DELETE FROM students
+WHERE age < 18;
