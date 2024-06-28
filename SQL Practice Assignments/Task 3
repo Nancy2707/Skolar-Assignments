@@ -8,8 +8,8 @@ CREATE TABLE departments (
 -- Insert records
 INSERT INTO departments (dept_id, dept_name) VALUES
 (1, 'Computer Science'),
-(2, 'Mathematics'),
-(3, 'Physics');
+(2, 'Mechanical'),
+(3, 'Electrical');
 
 -- Inner Join
 SELECT students.student_id, students.first_name, students.last_name, departments.dept_name, students.age
