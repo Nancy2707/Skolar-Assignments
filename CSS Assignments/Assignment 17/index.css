@@ -1,0 +1,97 @@
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --error-color: #e74c3c;
+    --font-size-large: 1.5em;
+    --font-size-medium: 1.2em;
+    --font-size-small: 1em;
+    --spacing-large: 20px;
+    --spacing-medium: 15px;
+    --spacing-small: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: var(--spacing-large);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: var(--spacing-large);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-large);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-small);
+    font-size: var(--font-size-medium);
+}
+
+.form-input {
+    width: 100%;
+    padding: var(--spacing-small);
+    font-size: var(--font-size-small);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group label, .checkbox-group label {
+    font-size: var(--font-size-small);
+}
+
+.btn {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #999;
+}
+
+.btn:hover { background-color: #2980b9; }
+
+.btn:active {
+    background-color: #2980b9;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+.error-message {
+    display: none;
+    color: var(--error-color);
+    font-size: var(--font-size-small);
+}
