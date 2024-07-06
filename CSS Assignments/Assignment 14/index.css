@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.animated-box {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+/* Fade In Animation */
+.fade-in {
+    animation: fadeInAnimation 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Bounce Animation */
+.bounce {
+    animation: bounceAnimation 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bounceAnimation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+/* Slide Animation */
+.slide {
+    animation: slideAnimation 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+}
+
+/* Rotate Animation */
+.rotate {
+    animation: rotateAnimation 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes rotateAnimation {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
