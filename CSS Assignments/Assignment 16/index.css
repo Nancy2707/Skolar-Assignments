@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn:active {
+    background-color: #1f78a1;
+}
+
+.box {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #27ae60;
+    border-radius: 50%;
+}
+
+.box::before {
+    top: -5px;
+    left: -5px;
+}
+
+.box::after {
+    bottom: -5px;
+    right: -5px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    padding: 10px;
+    background-color: #ecf0f1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.list li:nth-child(odd) {
+    background-color: #bdc3c7;
+}
+
+/* Input Focus Styles */
+.input-focus {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-focus:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
