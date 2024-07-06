@@ -1,0 +1,67 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.transform-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.transform-item {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.transform-item p {
+    margin: 0;
+}
+
+.transform-item:hover {
+    transform: scale(1.1);
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.scale {
+    transform: scale(1.5);
+}
+
+.skew {
+    transform: skew(20deg, 10deg);
+}
+
+.complex {
+    transform: rotate(45deg) scale(1.5) skew(20deg, 10deg) translate(50px, 50px);
+}
