@@ -1,0 +1,38 @@
+
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+.important {
+    font-weight: bold;
+    color: red;
+}
+#unique-element {
+    background-color: yellow;
+    padding: 10px;
+}
+
+a[href] {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+h1::first-letter {
+    font-size: 200%;
+    color: purple;
+}
+
+.btn {
+    background-color: lightblue;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: darkblue;
+    color: white;
+}
